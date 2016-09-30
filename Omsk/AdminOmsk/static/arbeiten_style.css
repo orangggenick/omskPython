@@ -1,0 +1,181 @@
+body{
+    background-color:#eee;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.containerPad{
+    padding-top: 2%;
+}
+
+.article{
+    padding-top: 12px;
+    background-color:#608ff9;
+    padding-bottom: 12px;
+}
+.right{
+    text-align: right;
+}
+
+.menu{
+    padding-top: 15px;
+}
+
+.red{
+    background-color:#e40042;
+    color: white;
+    border-color: #e40042;
+    height: 40px;
+    font-size: 1.6rem;
+}
+
+.news{
+    background-size: cover;
+}
+
+.fadeNews{
+    background-color:  rgba(0,0,0,0.5);
+    min-height: 330px;
+    width: 100%;
+    height: 100%;
+}
+
+.paddingNews{
+    padding: 5%;
+    width: 80%;
+    position: relative;
+    min-height: 330px;
+}
+
+.marginNews{
+    margin-bottom: 25px;
+    
+}
+
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.field{
+    border-radius: 10px;
+    box-shadow: none;
+    border: 10px solid #e40042;
+    background-color: #e40042;
+    color: #fff;
+}
+
+.hrNew{
+    color:white;
+    padding-top: 5px;
+    width:100%;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 15px;
+}
+
+
+.random{
+    background-size: cover;
+    text-align: center;
+
+}
+
+.randomPerson{
+    padding-top: 67px;
+}
+.randomFade{
+    background-color:  rgba(0,0,0,0.5);
+    min-height: 263px;
+    width: 100%;
+    height: 100%;
+}
+ .randomText{
+     padding-top: 45%;
+ }
+
+
+.marginLine{
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+.textLine{
+    margin-top: 30px;
+}
+
+.pictureLine{
+    margin-bottom: 20px;
+    background-size: cover;
+    min-height: 263px;
+    padding:5%;
+
+}
+.buttonLine{
+    margin-top: 10px;
+    float:left;
+}
+
+
+
+
+upTitle{
+    color:white;
+    padding-top: 0px;
+    font-size: 4rem;
+}
+
+newsDisc{
+    font-weight:400;
+    font-size: 16pt;
+    color: white;
+    line-height: 0.9;
+}
+
+newsDate{
+    color:gainsboro;
+    float: left;
+}
+
+randomText{
+    text-align:center;
+    font-size: 20pt;
+    color: #fff;
+}
+
+lineNewsTitle{
+    color: #000;
+    font-size: 4rem;
+    line-height: 0.7
+}
+
+lineNewsMain{
+    color:#000;
+    font-size: 1.8rem;
+}
+
+lineDate{
+    text-align: right;
+    color: rgb(118,115,116); 
+    font-size: 2rem;
+}
+
+
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+h3{
+    
+    color:white;
+}
