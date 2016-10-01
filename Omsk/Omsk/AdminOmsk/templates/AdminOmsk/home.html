@@ -1,0 +1,147 @@
+{% extends 'AdminOmsk/base.html' %}
+
+{% block home %}
+
+        <div class="container">    
+           <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                         <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>   
+                  <div class="carousel-inner">
+                      <div class="active item">
+                          <div class="container-fluid">
+                              <div class="row-fluid">
+                                  <div class="col-md-4">
+                                      <h1>hsdsjdhjs</h1>
+                                  </div>
+                                  
+                                   <div class="col-md-8">
+                                      <h1>hsdsjdhjs</h1>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                          <div class="carousel-caption">
+                
+                          </div>
+                      </div>
+                      <div class="item">
+                          <h2>Slide 2</h2>
+                          <div class="carousel-caption">
+                              <h3>Second slide label</h3>
+                              <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                          </div>
+                      </div>
+                      <div class="item">
+                            <h2>Slide 3</h2>
+                          <div class="carousel-caption">
+                              <h3>Third slide label</h3>
+                              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+             </div>      
+           </div>
+        </div>    
+       <div class="container containerPad">
+           <div class="row">
+               <div class="col-md-4 marginNews">
+                    <div class="news" style="background-image: url(img/dick1.jpg); min-height: 330px;">
+                        <div class="fadeNews">
+                            <div class="paddingNews">
+                                <newsDisc>15 сентября «Газпром» и Омская область подписали программу развития газоснабжения и газификации региона до конца 2020 года</newsDisc>
+                                <hr class="hrNew">
+                                <newsDate>19 сентября 2016 года</newsDate>
+                                <button type="button" class="btn btn-default red bottom">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+               <div class="col-md-4 marginNews">
+                    <div class="news" style="background-image: url(img/dick1.jpg); min-height: 330px;">
+                        <div class="fadeNews">
+                            <div class="paddingNews">
+                                <newsDisc>15 сентября «Газпром» и Омская область подписали программу развития газоснабжения и газификации региона до конца 2020 года</newsDisc>
+                                <hr class="hrNew">
+                                <newsDate>19 сентября 2016 года</newsDate>
+                                <button type="button" class="btn btn-default red bottom">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-md-3 col-md-offset-1 randomPerson">
+                   <div class="random" style="background-image: url({{ person.picture.url }}); min-height:263px;">
+                       <div class="randomFade">
+                           <div class="randomText"><randomText>{{ person.name }} {{ person.surname }}</randomText></div>
+                       </div>
+                   </div>
+               </div>
+         </div>
+
+         <div class="row">
+               <div class="col-md-4 marginNews">
+                    <div class="news" style="background-image: url(img/dick1.jpg); min-height: 330px;">
+                        <div class="fadeNews">
+                            <div class="paddingNews">
+                                <newsDisc>15 сентября «Газпром» и Омская область подписали программу развития газоснабжения и газификации региона до конца 2020 года</newsDisc>
+                                <hr class="hrNew">
+                                <newsDate>19 сентября 2016 года</newsDate>
+                                <button type="button" class="btn btn-default red bottom">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-md-4 marginNews">
+                    <div class="news" style="background-image: url(img/dick1.jpg); min-height: 330px;">
+                        <div class="fadeNews">
+                            <div class="paddingNews">
+                                <newsDisc>15 сентября «Газпром» и Омская область подписали программу развития газоснабжения и газификации региона до конца 2020 года</newsDisc>
+                                <hr class="hrNew">
+                                <newsDate>19 сентября 2016 года</newsDate>
+                                <button type="button" class="btn btn-default red bottom">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-md-offset-1">
+                   <div class="random" style="background-image: url({{ place.picture.url }}); min-height:263px;">
+                       <div class="randomFade">
+                           <div class="randomText"><randomText>{{ place.name }}</randomText></div>
+                       </div>
+                   </div>
+               </div>
+
+            </div>
+
+            {% for article in articles reversed %}
+            <div class="row marginLine">
+                <div class="col-md-3">
+                    <div class="pictureLine" style="background-image: url({{ article.picture.url }})"></div>
+                </div>
+                <div class="col-md-9">
+                   
+                    <div><lineNewsTitle>{{ article.header }}</lineNewsTitle></div>
+                    <div class="textLine"><lineNewsMain>{{ article.text }}</lineNewsMain></div>
+                    
+                    <button type="button" class="btn btn-default red buttonLine">Подробнее</button>
+                    
+                    <p align="right"><lineDate>{{ article.date }}</lineDate></p>
+                </div>
+            </div>
+            {% endfor %}
+            
+          </div>
+
+    {% endblock %}
