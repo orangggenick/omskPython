@@ -36,7 +36,7 @@
                 <div class="col-md-8">
                     <div class="btn-group-lg">
                         <button type="button" class="btn btn-default red">Новости</button>
-                        <button type="button" class="btn btn-default red">Пресса</button>
+                        <a><button type="button" class="btn btn-default red">Пресса</button></a>
                         <button type="button" class="btn btn-default red">История</button>
                         <button type="button" class="btn btn-default red">Контакты</button>
                     </div>
@@ -50,8 +50,19 @@
         </div>
 
         {% block home %}{% endblock %}
+        {% block press %}{% endblock %}
 
     </div>
+
+    <footer>
+
+        <div class="footerMain">
+                <footerText class="borderLine">Нормативные акты и документы</footerText>
+                <footerText class="borderLine">Инвесторам и меценатам</footerText>
+                <footerText>О сайте</footerText>
+        </div>
+
+    </footer>
 
 
 </body>

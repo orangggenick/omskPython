@@ -2,6 +2,10 @@ body{
     background-color:#eee;
     font-family: 'Hind Vadodara', sans-serif;
 }
+footer{
+    background-color: #608ff9;
+    min-height: 100px;
+}
 
 .containerPad{
     padding-top: 2%;
@@ -97,7 +101,7 @@ body{
     height: 100%;
 }
  .randomText{
-     padding-top: 45%;
+     padding-top: 10%;
  }
 
 
@@ -123,6 +127,14 @@ body{
 
 
 
+.footerMain{
+    text-align: center;
+    padding-top: 20px;
+}
+.borderLine{
+    border-right: 2px solid #fff;
+    padding-right: 7px;
+}
 
 upTitle{
     color:white;
@@ -150,7 +162,7 @@ randomText{
 
 lineNewsTitle{
     color: #000;
-    font-size: 4rem;
+    font-size: 3.2rem;
     line-height: 0.7
 }
 
@@ -178,4 +190,9 @@ h2{
 h3{
     
     color:white;
+}
+footerText{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left:5px;
 }
