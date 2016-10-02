@@ -1,0 +1,15 @@
+{% extends 'AdminOmsk/base.html' %}
+
+    {% block press %}
+
+
+    {% for newsparer in newspapers %}
+
+        {{ newsparer.name }}
+        {{ newsparer.link }}
+
+    {% endfor %}
+
+
+
+    {% endblock %}
